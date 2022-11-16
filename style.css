@@ -8,18 +8,20 @@ body{
 }
 
 #inside-container{
-    display: flex;
+    display:flex;
     padding: 20px;
 }
 
 #logo{
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 80px;
     border-radius: 50px;
     
 }
 
-#pesquisar {
-    margin-left: 40%;
+#paginas-nav{
+    color: aliceblue;
+    text-decoration: none;
+
 }
 
