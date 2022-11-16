@@ -21,7 +21,19 @@ body{
 
 #paginas-nav{
     color: aliceblue;
-    text-decoration: none;
+    list-style: none;
+
+}
+
+#text{
+    background-color: rgb(67, 104, 0);
+    text-decoration-color: aliceblue;
+    
+}
+
+#btn-nav button:hover{
+    border-color: blue;
+    transition: 1s;
 
 }
 
