@@ -1,0 +1,579 @@
+body{
+    background-color: rgb(65, 65, 65);display: inline;
+}
+
+.container-fluid{ /*Composisação da barra de navegação*/
+    background-color: black;
+    height: 100%;
+    position: relative; 
+    display:flex;
+    justify-content: flex-start
+    
+}
+
+.area-logo {
+   margin-right:20px;
+   margin-left: 20px;
+   margin-top: 5px;
+
+}
+
+.space-menu{
+    margin-right:20%;
+    margin-left: 20%;
+}
+
+.menu ul li button{
+    color: aliceblue;
+}
+
+.menu ul{
+    display: flex;
+    
+}
+
+.menu ul li{
+    padding: 20px;
+}
+
+#logo{
+    width: 90px;
+    height: 80px;
+    border-radius: 50px;
+    
+}
+
+.menu ul {
+    color: aliceblue;
+    list-style: none;
+    margin-top: 15px;
+
+}
+
+#btn{/*Home/Projetos etc(barra de nav.)*/
+    background-color: rgb(0, 0, 0);
+    text-decoration-color: aliceblue;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+
+#btn-nav button:hover{
+    
+    border-bottom-width: 4px;
+    border-bottom-color: aliceblue;
+    transition: 0.5s;
+}
+/****************************BARRA NAV - RESPONSIVA******************************/
+
+#barra{
+    
+    overflow: hidden;
+}
+
+body,
+html {
+  background: rgb(65, 65, 65);
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#menu-btn  {
+    overflow: hidden;
+    display: none;
+  }
+
+@media (max-width: 800px) {
+  body .navegacao-fundo-auxiliar {
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    background-color: rgba(6, 6, 6, 0);
+    width: 0px;
+    height: 0px;
+    transition: background-color 0.3s ease-in;
+    margin-top: 20px;
+  }
+  body.navAberto {
+    overflow-y: visible;
+  }
+  body.navAberto .navegacao-fundo-auxiliar {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(6, 6, 6, 0.75);
+    transition: background-color 0.3s ease-out;
+  }
+  body.navAberto .btn-toggle-menu {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+  body.navAberto > nav {
+    overflow-y: auto;
+    max-height: 90vh;
+    transition: max-height 0.3s ease-out;
+  }
+  body .separador {
+    border-bottom: 1px solid #626262;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: block;
+  }
+  body .btn-toggle-menu {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 8px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 8px;
+    right: 16px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+  }
+  body .btn-toggle-menu:hover {
+    background: #151515;
+  }
+  body .btn-toggle-menu:active {
+    background: #484848;
+  }
+  body > nav {
+    position: fixed;
+    max-height: 100vh;
+    left: 0px;
+    width: 100%;
+    bottom: 0px;
+    max-height: 54px;
+    color: #FFF;
+    background: #151515;
+    transition: max-height 0.3s ease-in;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  body > nav > h3 {
+    color: #626262;
+    font-weight: normal;
+    font-size: 13px;
+    padding-left: 16px;
+  }
+  body > nav > h2 {
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+  body > nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  body > nav > ul > li {
+    height: 48px;
+    box-sizing: border-box;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-right: 4px;
+  }
+  body > nav > ul > li.ativo > a {
+    font-weight: bold;
+    background: #626262;
+  }
+  body > nav > ul > li > a {
+    border-radius: 0px 20px 20px 0px;
+    display: block;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-left: 16px;
+    height: 40px;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+  body > nav > ul > li > a:hover {
+    background: #484848;
+  }
+  body > main {
+    transition: padding-left 0.3s ease-in;
+  }
+  body > main > header {
+    background: #060606;
+    height: 208px;
+    padding-top: 158px;
+    padding-left: 72px;
+    box-sizing: border-box;
+    transition: padding-left 0.3s ease-in;
+  }
+  body > main > header > h1 {
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  body > main > section {
+    display: block;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  body > main > section > .cartao {
+    background: #444;
+    width: calc(100% - 8px);
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 208px;
+    border-radius: 8px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 800px) {
+  body .navegacao-fundo-auxiliar {
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    background-color: rgba(6, 6, 6, 0);
+    width: 0px;
+    height: 0px;
+    transition: background-color 0.3s ease-in;
+  }
+  body.navAberto .navegacao-fundo-auxiliar {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(6, 6, 6, 0.75);
+    transition: background-color 0.3s ease-out;
+  }
+  body.navAberto .btn-toggle-menu {
+    left: 270px;
+    transition: left 0.3s ease-out;
+  }
+  body.navAberto > nav {
+    left: 0px;
+    transition: left 0.3s ease-out;
+  }
+  body .separador {
+    border-bottom: 1px solid #626262;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: block;
+  }
+  body .btn-toggle-menu {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 8px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    transition: left 0.3s ease-in;
+  }
+  body .btn-toggle-menu:hover {
+    background: #151515;
+  }
+  body .btn-toggle-menu:active {
+    background: #484848;
+  }
+  body > nav {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: -254px;
+    width: 254px;
+    color: #FFF;
+    background: #151515;
+    transition: left 0.3s ease-in;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  body > nav > h3 {
+    color: #626262;
+    font-weight: normal;
+    font-size: 13px;
+    padding-left: 16px;
+  }
+  body > nav > h2 {
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+  body > nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  body > nav > ul > li {
+    height: 48px;
+    box-sizing: border-box;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-right: 4px;
+  }
+  body > nav > ul > li.ativo > a {
+    font-weight: bold;
+    background: #626262;
+  }
+  body > nav > ul > li > a {
+    border-radius: 0px 20px 20px 0px;
+    display: block;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-left: 16px;
+    height: 40px;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+  body > nav > ul > li > a:hover {
+    background: #484848;
+  }
+  body > main {
+    transition: padding-left 0.3s ease-in;
+  }
+  body > main > header {
+    background: #060606;
+    height: 208px;
+    padding-top: 158px;
+    padding-left: 72px;
+    box-sizing: border-box;
+    transition: padding-left 0.3s ease-in;
+  }
+  body > main > header > h1 {
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  body > main > section {
+    display: block;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  body > main > section > .cartao {
+    background: #444;
+    width: calc(50% - 16px);
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 208px;
+    border-radius: 8px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 1120px) {
+  body .navegacao-fundo-auxiliar {
+    display: none;
+  }
+  body.navAberto .btn-toggle-menu {
+    left: 270px;
+    transition: left 0.3s ease-out;
+  }
+  body.navAberto > nav {
+    left: 0px;
+    transition: left 0.3s ease-out;
+  }
+  body.navAberto > main {
+    padding-left: 254px;
+    transition: padding-left 0.3s ease-out;
+  }
+  body.navAberto > main > header {
+    padding-left: 16px;
+    transition: padding-left 0.3s ease-out;
+  }
+  body .separador {
+    border-bottom: 1px solid #626262;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: block;
+  }
+  body .btn-toggle-menu {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 8px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    transition: left 0.3s ease-in;
+  }
+  body .btn-toggle-menu:hover {
+    background: #151515;
+  }
+  body .btn-toggle-menu:active {
+    background: #484848;
+  }
+  body > nav {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: -254px;
+    width: 254px;
+    color: #FFF;
+    background: #151515;
+    transition: left 0.3s ease-in;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  body > nav > h3 {
+    color: #626262;
+    font-weight: normal;
+    font-size: 13px;
+    padding-left: 16px;
+  }
+  body > nav > h2 {
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+  body > nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  body > nav > ul > li {
+    height: 48px;
+    box-sizing: border-box;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-right: 4px;
+  }
+  body > nav > ul > li.ativo > a {
+    font-weight: bold;
+    background: #626262;
+  }
+  body > nav > ul > li > a {
+    border-radius: 0px 20px 20px 0px;
+    display: block;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-left: 16px;
+    height: 40px;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+  body > nav > ul > li > a:hover {
+    background: #484848;
+  }
+  body > main {
+    transition: padding-left 0.3s ease-in;
+  }
+  body > main > header {
+    background: #060606;
+    height: 208px;
+    padding-top: 158px;
+    padding-left: 72px;
+    box-sizing: border-box;
+    transition: padding-left 0.3s ease-in;
+  }
+  body > main > header > h1 {
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  body > main > section {
+    display: block;
+    padding: 8px;
+    box-sizing: border-box;
+
+}*/
+/************************** END BARRA NAV - RESPONSIVA **********************/
+
+/*********************End Barra de navegação*******************/
+
+
+.Divisoria h4{
+    background-image: linear-gradient(to right, #0000, rgb(163, 221, 255),#0000);
+    width: 900px;
+    margin-inline-start: 16%;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.banner{
+    width: 70%;
+    height: 30%;
+    margin-left: 15%;
+    border-radius:5px;
+    border-style: outset;
+}
+
+#slide{
+    max-width:1200px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+}
+
+.container-obras{/*Margens da pagina em relaçao as "listas" de obras*/
+    
+    margin-left:15% ;
+    margin-right:15% ;
+}
+
+#Obras{/*Define o espaço entre as obras e como devem ser posicionadas*/
+    display: inline-block;
+    margin-right: 35px;
+    overflow: hidden;
+}
+
+#Obras a:link{
+    text-decoration: none;
+}
+
+.container-obras img {
+    max-width:300px;
+    max-height:200px;
+    width: auto;
+    height: auto; 
+    transition: 0.5s all ease-in-out;
+}
+
+.container-obras img:hover{
+   transform: scale(1.2); 
+}
+
+#titulo p{
+    margin-top: 10px;
+    color: black;
+}
+
+
+#Container-direitos p {
+    color: aliceblue;
+    margin-top: 40px;
+    margin-left: 35%;
+}
+}
