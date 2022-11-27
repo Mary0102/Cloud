@@ -1,5 +1,6 @@
-body{
-    background-color: rgb(65, 65, 65);display: inline;
+body #index{
+    background-color: rgb(65, 65, 65);
+    display: inline;
 }
 
 .container-fluid{ /*Composisação da barra de navegação*/
@@ -69,8 +70,14 @@ body{
 /****************************BARRA NAV - RESPONSIVA******************************/
 
 
-body, html {
+body #index, html #index {
   background: rgb(65, 65, 65);
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body #manga, html #manga {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -134,13 +141,10 @@ body, html {
     transition: background-color 0.3s ease-in;
     margin-top: 70px;
   }
-  body.navAberto {
-    overflow-y: auto;
-    position: absolute;
-  }
+ 
   body.navAberto .navegacao-fundo-auxiliar {
     width: 50%;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(6, 6, 6, 0.75);
     transition: background-color 0.3s ease-out;
   }
@@ -263,7 +267,7 @@ body, html {
   }
   body.navAberto .navegacao-fundo-auxiliar {
     width: 15%;
-    height: 150%;
+    height: 120%;
     background-color: rgba(6, 6, 6, 0.75);
     transition: background-color 0.3s ease-out;
   }
@@ -412,4 +416,116 @@ body, html {
     color: aliceblue;
     margin-top: 2%;
     margin-left: 35%;
+}
+
+/*********************************************END INDEX*********************************************************/
+
+/*************************************************INFO MANGÁS (mangainfo.html)*****************************************************************/
+.infomanga{
+  background: #BE93C5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.painel{
+  display: flex;
+  margin: 10%;
+  background-color: rgba(78, 78, 78, 0.425);
+  border-radius: 20px;
+}
+
+.img img{
+  margin: 20px;
+  margin-top: 50px;
+  max-width: 300px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  border-style: outset;
+  border-color: black;
+  border-radius: 5px;
+}
+
+.titulo{
+  margin-left: 35%;
+  position: absolute;
+}
+
+.info{
+  width: 100%;
+  margin-top: 30px;
+  display: table-cell;
+}
+
+.info h4{
+  display: inline-block;
+}
+
+.more{
+  width: 100%;   
+}
+
+.more h4{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.Divisoria-mg{
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e00, #302b63, #0f0c2900);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e00, #302b63, #0f0c2900); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 70%;
+  margin-inline-start: 15%;
+  border-radius: 10px;
+}
+
+.Divisoria-mg h3{
+  padding-top: 25px;
+  height: 50px;
+  color: #ffff;
+}
+
+.caps{  
+  
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #0f0c29;
+}
+
+
+.caps a:link{
+  text-decoration: none;
+}
+
+.caps h4:hover{
+  color: #ffff;
+  transition: 0.5;
+}
+
+/******************************LEITURA DA OBRA(Obra.html)*************************************/
+.read{
+  background-color: #242424;
+}
+
+.conteudo{
+  width: 50%;
+  margin-left: 25%;
+}
+
+.paginas-img{
+  /*margin-left:; */   
+}
+
+.paginas-img img{
+ /* max-width: ;
+  max-height: ;*/
+  width: auto;
+  height: auto;
+  display: block;
+  
+
 }
