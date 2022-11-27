@@ -13,9 +13,22 @@
 </head>
 <body>
 <!-----------------------------------BARRA DE NAVEGAÇÃO-------------------------------->
+
+  <div class="navegacao-fundo-auxiliar" id="auxiliar-menu">
+    <br>
+    <p>HOME</p>
+    <hr>
+    <p>PROJETOS</p>
+    <hr>
+    <p>SOBRE</p>
+    <hr>
+    <p>AVISOS</p>
+    <hr>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <h1>.</h1>
+  </div> <!-- elemento auxiliar para ficar de fundo quando o nav estiver aberto em mobile e telas de tamanho médio-->
 <main>  
 <div class="container-fluid">
-  
     <div class="area-logo">
       <img src="Image/nuvem.png" alt="Logo do site" id="logo">
     </div>              
@@ -33,20 +46,25 @@
             </li>
             <li id="btn-nav">
               <a href="#"><button  id="btn">AVISOS</button></a>
-            </li>
-            <!-- botao para abrir e fechar o menu-->
-              <a id="menu-btn" class="btn-toggle-menu" style="color:rgb(0, 0, 0);"><img src="Image/menu.png" id="barra"></a>
-          </ul>      
+            </li>   
+          </ul>  
         </div>
-  
-  </div>
- </div> 
+        <!-- botao para abrir e fechar o menu-->
+       
+          <a id="menu-btn" class="btn-toggle-menu" style="color:rgb(0, 0, 0);">
+            <img src="Image/menu.png" id="menu">
+          </a> 
+          <a id="close-menu" class="btn-close-menu" style="color:rgb(0, 0, 0);">
+            <img src="Image/x.png" id="img-close-menu" alt="close">
+          </a>  
+      </div>
+ </div>
+
 
 <!-----------------------------------BARRA DE NAVEGAÇÃO-------------------------------->       
                                             <br>
 <!-------------------------------------BANNER DOS MANGÁS--------------------------------------------------------->
-<div class="allpage"> 
-  <div class="navegacao-fundo-auxiliar" id="auxiliar-menu"></div><!-- elemento auxiliar para ficar de fundo quando o nav estiver aberto em mobile e telas de tamanho médio--> 
+
       <div class="banner">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -73,21 +91,21 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Próximo</span>
             </a>
-          </div>
-        </div>  
+        </div>
+      </div>  
           <script>
             $('.carousel').carousel()
           </script>
-  </div>
 <br>       
 <!-------------------------------------------BANNER DOS MANGÁS--------------------------------------------------------->
 <br>
+  
+<section clss="Projetos"> 
   <div class="Divisoria" style="text-align: center;">
     <h4> Atualizações mais recentes </h4>
   </div>
 <br><br>
-<section clss="Projetos"> 
-  <div class="container-obras"><!------Escopo de todas as obras-------->
+<div class="container-obras"><!------Escopo de todas as obras-------->
     <div id="Obras">
       <a href="#">
         <img src="Image/exemplo_obra.png" alt="Nome da obra" id="img-obras" >          

@@ -5,5 +5,6 @@ document.onreadystatechange = function(){
         listaDeClasses.toggle('navAberto');//se tiver a classe navAberto tirar, caso contrario adicionar
     };
     document.getElementById('menu-btn').onclick = toggleMenu;//botao menu
+    document.getElementById('close-menu').onclick = toggleMenu;//fecha o menu
     document.getElementById('auxiliar-menu').onclick = toggleMenu;//elemento auxiliar para fechar quando o usuario clickar fora da nav (mobile e telas de tamanho médio)
 }
