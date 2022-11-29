@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Obra</title>
+    <link rel="stylesheet" href="css/style_read.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/navbar.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+<body class="infomanga" id="manga">
+    <div class="navegacao-fundo-auxiliar" id="auxiliar-menu">
+        <br>
+        <p>HOME</p>
+        <hr>
+        <p>PROJETOS</p>
+        <hr>
+        <p>SOBRE</p>
+        <hr>
+        <p>AVISOS</p>
+        <hr>
+    </div> <!-- elemento auxiliar para ficar de fundo quando o nav estiver aberto em mobile e telas de tamanho médio-->
+      
+    <div class="container-fluid">
+        <div class="area-logo">
+          <img src="Image/nuvem.png" alt="Logo do site" id="logo">
+        </div>              
+          <div class="space-menu"><!-- Usado para definir a margem(posição)-->        
+            <div class="menu">
+              <ul id="elementos-ul" style="text-align:center ;">
+                <li class="ativo" id="btn-nav">
+                  <a href="index.html"><button id="btn">HOME</button></a>
+                </li>        
+                <li id="btn-nav">
+                  <a href="#"><button  id="btn">PROJETOS</button></a>
+                </li>
+                <li id="btn-nav">
+                  <a href="#"><button  id="btn">SOBRE</button></a>
+                </li>
+                <li id="btn-nav">
+                  <a href="#"><button  id="btn">AVISOS</button></a>
+                </li>   
+              </ul>  
+            </div>
+            <!-- botao para abrir e fechar o menu-->
+           
+              <a id="menu-btn" class="btn-toggle-menu" style="color:rgb(0, 0, 0);">
+                <img src="Image/menu.png" id="menu">
+              </a> 
+              <a id="close-menu" class="btn-close-menu" style="color:rgb(0, 0, 0);">
+                <img src="Image/x.png" id="img-close-menu" alt="close">
+              </a>  
+          </div>
+     </div>
+    <main>
+        <div class="painel">
+            <div class="img">
+                <img src="Image/Naruto1.png" alt="Nome da Obra" id="img"> 
+            </div>
+            <div class="titulo">
+                <h3>Naruto Clássico</h3> <br>
+            </div>
+            <div class="info">
+                <h4>Titulo Alternativo: </h4> 
+                    <span>Naruto</span>
+                <br>
+                <h4>Autor(a): </h4> 
+                    <span>Masashi Kishimoto</span>
+                <br>
+                <h4>Artista: </h4> 
+                    <span>Masashi Kishimoto</span>
+                <br>
+                <h4>Gênero: </h4> 
+                    <span>Shonen</span>
+                <br>
+                <h4>Tipo: </h4> 
+                    <span>Mangá, ação e aventura</span>
+                <br>
+                <h4>Status: </h4> 
+                    <span>Ativo</span>
+            </div>
+        </div>
+        <div class="more">
+            <div class="Divisoria-mg" style="text-align: center;">
+                <h3>Sinopse</h3>
+            </div>        
+                <br>
+            <h4>Exercitation proident ullamco labore fugiat labore dolore duis qui commodo anim. 
+                Culpa ut qui ipsum consequat ex anim fugiat aliquip officia ullamco duis exercitation. 
+                Adipisicing proident est duis aute duis sint dolor cupidatat est nostrud anim ad id.
+            </h4>
+                <br>
+            <div class="Divisoria-mg" style="text-align: center;">
+                <h3>Capítulos</h3>
+            </div>
+        <div class="capitulos">
+            <div class="caps">
+                <a href="Naruto-01.html">
+                    <h4 style="text-align: center;">Capitulo 1</h4>
+                </a>
+            </div>
+            <div class="caps">    
+                <a href="#">
+                    <h4 style="text-align: center;">Capitulo 2</h4>
+                </a>
+            </div>
+            <div class="caps">    
+                <a href="#">
+                    <h4 style="text-align: center;">Capitulo 3</h4>
+                </a>
+            </div>
+            <div class="caps">    
+                <a href="#">
+                    <h4 style="text-align: center;">Capitulo 4</h4>
+                </a>
+            </div>
+            <div class="caps">    
+                <a href="#">
+                    <h4 style="text-align: center;">Capitulo 5</h4>
+                </a>
+            </div>
+        </div>
+
+        </div>
+    </main>
+
+
+    <br> <br> <br>
+    <div class="container-fluid" id="Container-direitos">
+        <p> © 2022 Cloud Mangás. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
