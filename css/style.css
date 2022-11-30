@@ -394,7 +394,7 @@ body #manga, html #manga {
 }
 
 .container-obras img {
-    max-width:70%;
+    max-width:90%;
     max-height:70%;
     width: auto;
     height: auto; 
@@ -406,16 +406,16 @@ body #manga, html #manga {
    transform: scale(1.2); 
 }
 
-#titulo p{
-    margin-top: 10px;
+#titulo {
+    margin-top: 10%;
     color: rgb(255, 255, 255);
 }
 
 
 #Container-direitos p {
     color: aliceblue;
-    margin-top: 2%;
-    margin-left: 35%;
+    margin-top: 1%;
+    
 }
 
 /*********************************************END INDEX*********************************************************/
@@ -516,8 +516,12 @@ body #manga, html #manga {
   margin-left: 25%;
 }
 
+.conteudo h1{
+  color: #ffff;
+}
+
 .paginas-img{
-  /*margin-left:; */   
+  margin-left:10%;
 }
 
 .paginas-img img{
